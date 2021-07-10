@@ -1,4 +1,4 @@
- /** code by webdevtrick ( https://webdevtrick.com ) **/
+ 
 body {
 	margin: 0;
 	padding: 0;
@@ -8,8 +8,11 @@ body {
 	font-family: 'Righteous', cursive;
 }
 .nav-bar {
+  margin-top: -10px;
+ 
   height: 70px;
-  background: #262626;
+ background-color: black;
+  background-image: url("logo_easy.png");
 }
 
 .brand {
@@ -21,8 +24,12 @@ body {
   font-size: 20px;
 }
 .brand a img {
-	max-height: 70px;
+  max-height: 70px;
+  margin-top: 5px;
+  margin-left: 20px;
+
 }
+	
 .brand a,
 .brand a:visited {
   color: #ffffff;
@@ -76,8 +83,8 @@ nav ul li ul li a {
 .nav-dropdown {
   position: absolute;
   display: none;
-  z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+
 }
 .nav-mobile {
   display: none;
@@ -115,7 +122,8 @@ nav ul li ul li a {
   }
 
   .nav-dropdown {
-    position: static;
+    position: fixed;
+
   }
 	.brand a img {
 		max-height: 60px;
@@ -182,9 +190,9 @@ nav ul li a, nav ul li a:visited {
 }
 section{ padding: 10px 0px; width: 100%;}
 #home-page{text-align: center; font-size: 20px;background-color:#FFF3B0;color: black;clear: both; margin-top: 10px;}
-h1{font-size: 40px; color: black; text-align: center; margin-top: 50px;}
+#about-page h1{font-size: 40px; color: black; text-align: center; margin-top: 50px;}
 
-#about-page{text-align: center; font-size: 20px;background-color:#FFEA70; color: black;clear: both; margin-top:50px;padding: 5px;}
+#about-page{width: inherit;text-align: center; font-size: 20px;background-color:#FFEA70; color: black;clear: both; padding-right:150px;padding-left: 150px;}
 p{text-align: center;}
 
 
@@ -458,3 +466,60 @@ p{text-align: center;}
   }
 }
 
+
+.main{
+
+ margin: 2%;
+}
+
+.card{background-color: orange;
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h4{
+  font-size: 20px;
+ }
+ h2{font-size: 15px;color: White;}
+h3{font-size: 15px;color: black;}
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
