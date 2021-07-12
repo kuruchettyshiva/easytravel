@@ -29,7 +29,7 @@ body {
   margin-left: 20px;
 
 }
-	
+  
 .brand a,
 .brand a:visited {
   color: #ffffff;
@@ -114,8 +114,8 @@ nav ul li ul li a {
   nav ul li a {
     padding: 15px;
     line-height: 20px;
-	padding-left: 25%;
-	 
+  padding-left: 25%;
+   
   }
   nav ul li ul li a {
     padding-left: 30%;
@@ -125,10 +125,10 @@ nav ul li ul li a {
     position: fixed;
 
   }
-	.brand a img {
-		max-height: 60px;
-		margin-top: 5px;
-	}
+  .brand a img {
+    max-height: 60px;
+    margin-top: 5px;
+  }
 }
 @media screen and (min-width: 799px) {
   .nav-list {
@@ -200,9 +200,9 @@ p{text-align: center;}
 .slides-bar{
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
     justify-content: space-evenly;
 
 
@@ -467,59 +467,66 @@ p{text-align: center;}
 }
 
 
-.main{
-
- margin: 2%;
+:root {
+  --clr-primary: #651fff;
+  --clr-gray: #37474f;
+  --clr-gray-light: #b0bec5;
 }
 
-.card{background-color: orange;
-     width: 20%;
-     display: inline-block;
-     box-shadow: 2px 2px 20px black;
-     border-radius: 5px; 
-     margin: 2%;
-    }
+* 
 
-.image img{
-  width: 100%;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  
 
- 
- }
-
-.title{
- 
-  text-align: center;
-  padding: 10px;
-  
- }
-
-h4{
-  font-size: 20px;
- }
- h2{font-size: 15px;color: White;}
-h3{font-size: 15px;color: black;}
-.des{
-  padding: 3px;
-  text-align: center;
- 
-  padding-top: 10px;
-        border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  justify-content: center;
 }
-button{
-  margin-top: 40px;
-  margin-bottom: 10px;
+
+.cont {
+
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
   background-color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding:10px;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  margin: 0.5rem;
 }
-button:hover{
-  background-color: black;
+
+.banner-img {
+  position: absolute;
+  background-image: url(https://images.unsplash.com/photo-1582727657635-c771002bdada?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  height: 10rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cont.h1{font-size: 10px;}
+
+.profile-img {
+  width: 8rem;
+  clip-path: circle(60px at center);
+  margin-top: 4.5rem;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.description {
+  margin: 1rem 2rem;
+  font-size: 0.9rem;
+}
+
+.bton {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
   color: white;
-  transition: .5s;
-  cursor: pointer;
+  padding: 1rem;
+  background-color: orangered;
 }
+#team.h2{font-size: 10px;}
