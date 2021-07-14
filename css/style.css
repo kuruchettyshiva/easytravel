@@ -362,7 +362,7 @@ p{text-align: center;}
 
 .footer__logo {
   font-family: 'Pacifico', cursive;
-  font-weight: 400;
+  font-weight: 10;
   text-transform: lowercase;
   font-size: 1.5rem;
 }
@@ -370,11 +370,11 @@ p{text-align: center;}
 .footer__addr h2 {
   margin-top: 1.3em;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 10;
 }
 
 .nav__title {
-  font-weight: 400;
+  font-weight: 10;
   font-size: 15px;
 }
 
@@ -387,7 +387,7 @@ p{text-align: center;}
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 36px;
+  height: 6px;
   max-width: max-content;
   background-color: rgb(33, 33, 33, 0.07);
   border-radius: 100px;
@@ -474,8 +474,6 @@ p{text-align: center;}
 }
 
 * 
-
-
 .wrapper-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 30rem);
