@@ -226,3 +226,86 @@ font-weight: bold;
 .card a{
 text-decoration: none;
 }
+/*tables*/
+.table-box{
+    margin: 50px auto;
+} 
+
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 1px 0;
+    color: #000;
+    font-size: 15px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+}
+.table-head{
+    background: #000;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 500;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.table-cell{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 2px solid #d6d4d4;
+    vertical-align: middle;
+}
+.first-cell{
+    text-align: left;
+    padding-left: 10px;
+}
+.last-cell{
+    border-right: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+  .table-row {
+    font-size: 11px;
+  }
+}
+
+
+/*collapside*/
+.accordion {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 40%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: .5s;
+  margin: 10px;
+  }
+  
+  .active, .accordion:hover {
+  background-color: #fff;
+  color: #000; 
+  }
+  
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+button{
+  padding: 10px;
+}
